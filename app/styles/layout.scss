@@ -1,0 +1,110 @@
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 300 !important;
+  margin: 0px;
+}
+
+.jumbotron {
+  @include linear-gradient(15deg, darken($base-color, 15%), lighten($base-color, 10%));
+
+  height: 460px;
+  padding-top: 20px;
+  position: relative;
+
+  .container {
+    max-width: 970px;
+  }
+
+  ul.links {
+    li a {
+      @include transition(all 0.8s ease);
+
+      font-size: $font-size-h5;
+      color: white;
+      font-weight: 300;
+      opacity: 0.3;
+      text-decoration: none;
+
+      &:hover, &.active, &:active {
+        opacity: 1.0;
+        color: white;
+      }
+    }
+  }
+}
+
+.logo {
+  img {
+    @include transition(all 0.8s ease);
+
+    height: $font-size-h1;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1.0;
+    }
+  }
+}
+
+.headline {
+  margin-top: 12.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  height: 100%;
+
+  .title {
+    color: white !important;
+    letter-spacing: -1.5px;
+
+    font-size: ceil((1.25 * $font-size-h1));
+  }
+
+  .description {
+    color: lighten($gray-light, 25%);
+    margin-bottom: 50px;
+    font-size: ceil((0.75 * $font-size-h1));
+    letter-spacing: -0.75px;
+    line-height: ceil((1.15 * $font-size-h1));
+
+    small, a {
+      color: lighten($gray-light, 20%);
+    }
+  }
+}
+
+section {
+  margin-bottom: 75px;
+}
+
+.content {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  h1, h2, h3 {
+    small {
+      font-weight: $headings-font-weight;
+      color: $gray-light;
+    }
+  }
+}
+
+footer {
+  @extend .text-center;
+  @extend .text-muted;
+
+  padding-bottom: 20px;
+
+  .bottom {
+    a {
+      color: $gray-light;
+
+      &:hover {
+        color: $gray-light;
+      }
+    }
+  }
+}

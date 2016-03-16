@@ -6,6 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('prosecutors', { path: '/' });
+  this.route('prosecutor', { path: '/:name' });
 });
 
 export default Router;

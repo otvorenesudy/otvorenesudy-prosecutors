@@ -1,0 +1,11 @@
+<ul>
+  {{#each model as |prosecutor| }}
+    <li>
+      {{#link-to 'prosecutor' prosecutor.name.value }}
+        {{ prosecutor.name.value }}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}
