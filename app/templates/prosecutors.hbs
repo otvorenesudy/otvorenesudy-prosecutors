@@ -1,11 +1,28 @@
-<ul>
-  {{#each model as |prosecutor| }}
-    <li>
-      {{#link-to 'prosecutor' prosecutor.name.value }}
-        {{ prosecutor.name.value }}
-      {{/link-to}}
-    </li>
-  {{/each}}
-</ul>
+<section id="prosecutors-heading">
+  <h1 class="text-center">
+    Zoznam prokurátorov
+
+    <small>
+      <br>
+
+      Vyhľadávate v zozname {{ model.length }} prokurátorov
+    </small>
+  </h1>
+</section>
+
+<section id="prosecutors-controls">
+  <div class="row"> 
+    <div class="col-md-6 col-md-offset-3">
+      <div class="input-group">
+        <span class="input-group-addon">{{ fa-icon 'search' }}</span>
+        <input type="text"  class="form-control" name="query" id="query" value="" placeholder="Vyhľadávajte podľa mena ako Harabin, Číznar, &hellip;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prosecutors-list">
+  {{ prosecutors-list prosecutors=model }}
+</section>
 
 {{outlet}}

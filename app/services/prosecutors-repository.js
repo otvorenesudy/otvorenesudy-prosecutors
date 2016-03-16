@@ -5,7 +5,9 @@ export default Ember.Service.extend({
 
   init() {
     this._super(...arguments);
-    this.set('data', Ember.$.getJSON('/prosecutors.json'));
+    var promise = Ember.$.get('/prosecutors.json');
+
+    this.set('data', promise);
   },
 
   all() {

@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <ul class="list-unstyled">
+      {{#each foldedContent as |prosecutor| }}
+        <li>
+          <h4>
+            {{#link-to 'prosecutor' prosecutor.name.value }}
+              {{ prosecutor.name.value }}
+            {{/link-to}}
+          </h4>
+
+          <span class="pull-right">{{ prosecutor.propertyDeclarations.length }}</span>
+        </li>
+      {{/each}}
+    </ul>
+
+    <br>
+
+    {{#if canUnfoldMore }}
+      <h4 class="text-center">
+        <a href="#" {{ action 'unfoldMore' }}>Zobraziť dalších prokurátorov</a>
+      </h4>
+    {{/if}}
+  </div>
+</div>
