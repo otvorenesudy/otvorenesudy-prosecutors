@@ -1,11 +1,9 @@
+// Colors
 $base-color: #483578;
+$brand-primary: $base-color !default;
 $link-color: $base-color !default;
 $btn-primary-bg: lighten($base-color, 15%) !default;
-
-$enable-rounded: true;
-$enable-shadows: false;
-$enable-gradients: false;
-$enable-transitions: true;
+$input-border-focus: lighten($base-color, 30%) !default;
 
 $headings-font-weight: 300 !important;
 

@@ -7,9 +7,11 @@
             {{#link-to 'prosecutor' prosecutor.name.value }}
               {{ prosecutor.name.value }}
             {{/link-to}}
-          </h4>
 
-          <span class="pull-right">{{ prosecutor.propertyDeclarations.length }}</span>
+            <small class="pull-right">
+              {{ prosecutor.property_declarations.length }}
+            </small>
+          </h4>
         </li>
       {{/each}}
     </ul>
