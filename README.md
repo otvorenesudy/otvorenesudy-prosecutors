@@ -1,7 +1,6 @@
-# Otvorenesudy-prosecutors
+# Prosecutors
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Simple Ember application to provide better and faster interface for searching and browsing property declarations of prosecutors from [General Prosecutor's Office](https://www.genpro.gov.sk/prokuratura-sr/majetkove-priznania-30a3.html).
 
 ## Prerequisites
 
