@@ -2,5 +2,8 @@ import Ember from 'ember';
 import Foldable from '../mixins/foldable';
 
 export default Ember.Component.extend(Foldable, {
-  foldableContent: Ember.computed.alias('prosecutors')
+  sortDefinition: ['name.last', 'name.first'],
+  sortedProsecutors: Ember.computed.sort('prosecutors', 'sortDefinition'),
+  foldableContent: Ember.computed.alias('sortedProsecutors'),
+
 });

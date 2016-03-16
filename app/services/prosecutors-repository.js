@@ -14,6 +14,22 @@ export default Ember.Service.extend({
     return this.get('data');
   },
 
+  find(name) {
+    return new Promise((resolve, reject) => {
+      this.get('data').then((data) => {
+        var prosecutor = data.find(function(e) {
+          return e.name.value === name;
+        });
+
+        if (prosecutor) {
+          resolve(prosecutor);
+        } else {
+          reject(`Could not find prosecutor with name ${name}.`);
+        }
+      });
+    });
+  },
+
   search(query) {
     return new Promise((resolve, reject) => {
       this.get('data').then((data) => {

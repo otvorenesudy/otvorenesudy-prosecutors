@@ -99,14 +99,4 @@ footer {
   @extend .text-muted;
 
   padding-bottom: 20px;
-
-  .bottom {
-    a {
-      color: $gray-light;
-
-      &:hover {
-        color: $gray-light;
-      }
-    }
-  }
 }

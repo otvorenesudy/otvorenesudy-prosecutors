@@ -1,0 +1,46 @@
+{{#each sortedPropertyDeclarations as |declaration| }}
+  <section id="property-declaration-{{ declaration.year }}">
+    <h3>
+      Majetkové priznanie za rok {{ declaration.year }}
+      <hr>
+    </h3>
+
+    {{#each declaration.lists as |list|}}
+      {{#if list.items }}
+        {{ property-declaration-table category=list.category items=list.items }}
+      {{/if}}
+    {{/each}}
+
+    {{#if declaration.incomes }}
+      <table class="table table-bordered">
+        <caption>Príjmy a iné pôžitky</caption>
+
+        <thead>
+          <tr>
+            <th>Názov/popis</th>
+            <th>Príjem (v &euro;)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {{#each declaration.incomes as |income| }}
+            <tr>
+              <td>{{ optional-value income.description }}</td>
+              <td>{{ optional-value income.value }}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    {{/if }}
+
+    {{#if declaration.statements }}
+      <h4>Vyhlásenia</h4>
+
+      <ul class="list-unstyled">
+        {{#each declaration.statements as |statement| }}
+          <li>{{ statement }}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </section>
+{{/each}}

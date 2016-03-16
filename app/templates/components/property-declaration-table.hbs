@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+  <caption>{{ category }}</caption>
+
+  <thead>
+    <tr>
+      <th>Názov/popis</th>
+      <th>Dovôd nadobudnutia</th>
+      <th>Dátum nadobudnutia</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each items as |item| }}
+      <tr>
+        <td>{{ optional-value item.description }}</td>
+        <td>{{ optional-value item.acquisition_reason }}</td>
+        <td>{{ optional-value item.acquisition_date }}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+

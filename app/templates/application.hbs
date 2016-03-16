@@ -1,8 +1,8 @@
 <div class="jumbotron">
   <div class="container">
-    <a class="logo" href="/">
+    {{#link-to 'application' class="logo" }}
       <img src="/assets/images/logo.svg" alt="Otvorené Súdy">
-    </a>
+    {{/link-to}}
 
     <ul class="links list-inline pull-right">
       <li>
@@ -34,3 +34,17 @@
 <div class="container content">
   {{outlet}}
 </div>
+
+<footer>
+  <div class="container">
+    Dáta sú získané zo portálu <a target="_blank" href="https://www.genpro.gov.sk/prokuratura-sr/majetkove-priznania-30a3.html">Generálnej prokuratúry Slovenskej Republiky</a>. 
+    <br>
+    Udáje sú získané v originálnej podobe bez úprav a za ich správnosť autori portálu nezodpovedájú.
+    <br>
+    <br>
+    Copyright 2015 &middot;
+    <a target="_blank" href="https://github.com/otvorenesudy/otvorenesudy-prosecutors">GitHub</a> &middot; 
+    <a target="_blank" href="https://otvorenesudy.sk">Otvorené Súdy</a> &middot;
+    <a target="_blank" href="http://transparency.sk">Transparency International Slovensko</a>
+  </div>
+</footer>

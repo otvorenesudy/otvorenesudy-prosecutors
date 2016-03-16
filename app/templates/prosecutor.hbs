@@ -1,1 +1,21 @@
-{{outlet}}
+{{ log model  }}
+
+<section id="property-declaration-headline" class="text-center">
+  <h1>
+    {{ model.name.value }}
+    <br>
+    <small>
+      Majektové priznania za roky {{ format-property-declarations-years model.property_declarations }}
+    </small>
+  </h1>
+
+  <h4 class="text-center">
+    {{#link-to 'application' }}Zoznam prokurátorov{{/link-to}}
+    &middot;
+    <a target="_blank" href="https://otvorenesudy.sk/judges/search?q={{ model.name.value }}">Vyhľadať na Otvorené Súdy</a>
+  </h4>
+</section>
+
+<div class="property-declarations-list">
+  {{ property-declarations-list propertyDeclarations=model.property_declarations }}
+</div>
