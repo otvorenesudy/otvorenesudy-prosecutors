@@ -1,4 +1,4 @@
-# Prosecutors
+# Open Courts Prosecutors
 
 Simple Ember application to provide better and faster interface for searching and browsing property declarations of prosecutors from [General Prosecutor's Office](https://www.genpro.gov.sk/prokuratura-sr/majetkove-priznania-30a3.html).
 
@@ -40,7 +40,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+* Deploy with `env OPENCOURTS_DEPLOY_PASSWORD=... ember deploy production`
+* Activate deployed version with `env OPENCOURTS_DEPLOY_PASSWORD=... ember deploy:activate production --revision=GIT_COMMIT_TAG`.
 
 ## Further Reading / Useful Links
 
