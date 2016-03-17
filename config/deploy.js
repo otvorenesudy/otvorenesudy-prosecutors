@@ -16,7 +16,7 @@ module.exports = function(deployTarget) {
     var ssh = {
       host: 'otvorenesudy.sk',
       username: 'deploy',
-      password: process.env.OTVORENESUDY_DEPLOY_PASSWORD
+      password: process.env.OPENCOURTS_DEPLOY_PASSWORD
     }
 
     ENV['ssh-index'] = {
