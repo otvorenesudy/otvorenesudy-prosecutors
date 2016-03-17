@@ -15,5 +15,9 @@ export default Ember.Route.extend({
 
   serialize(prosecutor) {
     return { name: prosecutor.name.value.replace(/\s/g, '+') }
-  }
+  },
+
+  resetScrollOnEnter: Ember.on('activate', function() { 
+    window.scrollTo(0, 440);
+  })
 });
