@@ -5,9 +5,12 @@ export default Ember.Service.extend({
 
   init() {
     this._super(...arguments);
-    var promise = Ember.$.get('/prosecutors.json');
 
-    this.set('data', promise);
+    setTimeout(=> {
+      var promise = Ember.$.get('/prosecutors.json');
+
+      this.set('data', promise);
+    }, 0);
   },
 
   all() {
