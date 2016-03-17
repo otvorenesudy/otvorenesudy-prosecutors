@@ -1,4 +1,4 @@
-import { optionalValue } from 'otvorenesudy-prosecutors/helpers/optional-value';
+import { optionalValue } from 'opencourts-prosecutors/helpers/optional-value';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | optional value');

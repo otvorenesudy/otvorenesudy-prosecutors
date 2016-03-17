@@ -1,7 +1,7 @@
 {
-  "name": "otvorenesudy-prosecutors",
+  "name": "opencourts-prosecutors",
   "version": "0.0.0",
-  "description": "Small description for otvorenesudy-prosecutors goes here",
+  "description": "Small description for opencourts-prosecutors goes here",
   "private": true,
   "directories": {
     "doc": "doc",

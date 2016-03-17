@@ -22,7 +22,7 @@ module.exports = function(deployTarget) {
     ENV['ssh-index'] = {
       host: ssh.host,
       username: ssh.username,
-      remoteDir: '/home/deploy/projects/otvorenesudy-prosecutors-production/',
+      remoteDir: '/home/deploy/projects/opencourts-prosecutors-production/',
       password: ssh.password,
       allowOverwrite: true
     };

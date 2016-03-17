@@ -1,4 +1,4 @@
-import { formatPropertyDeclarationsYears } from 'otvorenesudy-prosecutors/helpers/format-property-declarations-years';
+import { formatPropertyDeclarationsYears } from 'opencourts-prosecutors/helpers/format-property-declarations-years';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | format property declarations years');

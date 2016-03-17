@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'otvorenesudy-prosecutors',
+    modulePrefix: 'opencourts-prosecutors',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
