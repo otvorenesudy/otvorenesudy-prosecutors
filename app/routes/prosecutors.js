@@ -18,5 +18,15 @@ export default Ember.Route.extend({
 
   setupController(controller, model) {
     controller.set('model', model);
+  },
+
+  actions: {
+    loading() {
+      var loadingState = this.get('isLoaded');
+
+      this.set('isLoaded', true);
+
+      return !loadingState;
+    }
   }
 });
