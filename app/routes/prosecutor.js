@@ -15,5 +15,5 @@ export default Ember.Route.extend({
 
   serialize(prosecutor) {
     return { name: prosecutor.name.value.replace(/\s/g, '+') }
-  },
+  }
 });

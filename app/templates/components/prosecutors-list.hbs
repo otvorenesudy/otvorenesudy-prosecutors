@@ -1,32 +1,26 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    {{#if prosecutors.length }}
-      <ul class="list-unstyled">
-        {{#each foldedContent as |prosecutor| }}
-          <li>
-            <h4>
-              {{#link-to 'prosecutor' prosecutor }}
-                {{ prosecutor.name.value }}
-              {{/link-to}}
+    <ul class="list-unstyled">
+      {{#each foldedContent as |prosecutor| }}
+        <li>
+          <h4>
+            {{#link-to 'prosecutor' prosecutor }}
+              {{ prosecutor.name.value }}
+            {{/link-to}}
 
-              <small class="pull-right">
-                {{ prosecutor.property_declarations.length }}
-              </small>
-            </h4>
-          </li>
-        {{/each}}
-      </ul>
+            <small class="pull-right">
+              {{ prosecutor.property_declarations.length }}
+            </small>
+          </h4>
+        </li>
+      {{/each}}
+    </ul>
 
-      <br>
+    <br>
 
-      {{#if canUnfoldMore }}
-        <h4 class="text-center">
-          <a href="#" {{ action 'unfoldMore' }}>Zobraziť dalších prokurátorov</a>
-        </h4>
-      {{/if}}
-    {{else}}
-      <h4 class="text-muted text-center">
-        {{ fa-icon 'circle-o-notch' spin=true }}
+    {{#if canUnfoldMore }}
+      <h4 class="text-center">
+        <a href="#" {{ action 'unfoldMore' }}>Zobraziť dalších prokurátorov</a>
       </h4>
     {{/if}}
   </div>

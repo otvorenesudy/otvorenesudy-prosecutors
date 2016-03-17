@@ -1,17 +1,18 @@
 import Ember from 'ember';
 
-var DataProxy = Ember.ArrayProxy.extend({
-  content: [],
-
-  lookupDataAfterInit: Ember.on('init', function() {
-    Ember.$.get('/prosecutors.json').then((data) => {
-      this.set('content', data);
-    });
-  })
-});
-
 export default Ember.Service.extend({
-  data: DataProxy.create(),
+  data: null,
+
+  init() {
+    this._super(...arguments);
+    var promise = new Promise((resolve, reject) => {
+      Ember.$.get('/prosecutors.json').then((data) => {
+        resolve(data.sortBy('name.last', 'name.middle', 'name.first'));
+      });
+    });
+
+    this.set('data', promise);
+  },
 
   all() {
     return this.get('data');
@@ -34,6 +35,10 @@ export default Ember.Service.extend({
   },
 
   search(query) {
+    if (!query) {
+      return this.all();
+    }
+
     return new Promise((resolve, reject) => {
       this.get('data').then((data) => {
         var filtered = data.filter(function(e) {
@@ -41,7 +46,7 @@ export default Ember.Service.extend({
         });
 
         resolve(filtered);
-      })
+      });
     });
   }
 });
