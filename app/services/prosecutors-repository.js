@@ -1,17 +1,17 @@
 import Ember from 'ember';
 
+var DataProxy = Ember.ArrayProxy.extend({
+  content: [],
+
+  lookupDataAfterInit: Ember.on('init', function() {
+    Ember.$.get('/prosecutors.json').then((data) => {
+      this.set('content', data);
+    });
+  })
+});
+
 export default Ember.Service.extend({
-  data: null,
-
-  init() {
-    this._super(...arguments);
-
-    setTimeout(() => {
-      var promise = Ember.$.get('/prosecutors.json');
-
-      this.set('data', promise);
-    }, 0);
-  },
+  data: DataProxy.create(),
 
   all() {
     return this.get('data');
