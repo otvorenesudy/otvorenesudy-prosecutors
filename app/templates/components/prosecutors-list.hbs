@@ -9,7 +9,7 @@
             {{/link-to}}
 
             <small class="pull-right">
-              {{ prosecutor.property_declarations.length }}
+              {{ t 'property_declaration' count=prosecutor.property_declarations.length }}
             </small>
           </h4>
         </li>
@@ -20,7 +20,7 @@
 
     {{#if canUnfoldMore }}
       <h4 class="text-center">
-        <a href="#" {{ action 'unfoldMore' }}>Zobraziť dalších prokurátorov</a>
+        <a href="#" {{ action 'unfoldMore' }}>{{ t 'components.prosecutors-list.unfold_more' }}</a>
       </h4>
     {{/if}}
   </div>

@@ -1,11 +1,11 @@
 <section id="prosecutors-heading">
   <h1 class="text-center">
-    Zoznam prokurátorov
+    {{ t 'prosecutors.list' }}
 
     <small>
       <br>
 
-      Vyhľadávate v zozname majetkových priznaní {{ model.length }} prokurátorov
+      {{ t 'prosecutors.description' count=model.length }}
     </small>
   </h1>
 </section>
@@ -15,7 +15,7 @@
     <div class="col-md-8 col-md-offset-2">
       <div class="input-group">
         <span class="input-group-addon">{{ fa-icon 'search' }}</span>
-        {{ input value=q id="q" type="text" class="form-control" name="q" placeholder="Vyhľadávajte podľa mena ako harabin, číznar, ..." autocomplete="off" }}
+        {{ input value=query id="q" type="text" class="form-control" name="q" placeholder=(t 'prosecutors.search_placeholder') autocomplete="off" }}
       </div>
     </div>
   </div>

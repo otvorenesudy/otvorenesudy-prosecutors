@@ -3,14 +3,14 @@
     {{ model.name.value }}
     <br>
     <small>
-      Majetkové priznania za roky {{ format-property-declarations-years model.property_declarations }}
+      {{ t 'prosecutor.description' years=(format-property-declarations-years model.property_declarations) }}
     </small>
   </h1>
 
   <h4 class="text-center">
-    {{#link-to 'application' }}Zoznam prokurátorov{{/link-to}}
+    {{#link-to 'application' }}{{ t 'prosecutor.prosecutors_list'}}{{/link-to}}
     &middot;
-    <a target="_blank" href="https://otvorenesudy.sk/judges/search?q={{ model.name.value }}">Vyhľadať na Otvorené Súdy</a>
+    <a target="_blank" href="https://otvorenesudy.sk/judges/search?q={{ model.name.value }}">{{ t 'prosecutor.search' }}</a>
   </h4>
 </section>
 

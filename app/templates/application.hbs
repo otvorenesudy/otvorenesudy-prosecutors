@@ -6,19 +6,21 @@
 
     <ul class="links list-inline pull-right">
       <li>
-        <a target="_blank" href="http://transparency.darujme.sk/761">Podporte náš boj za transparetnejšie súdnictvo&nbsp;{{ fa-icon "external-link" }}</a>
+        {{#link-to (query-params l='sk') }}SK{{/link-to}}
+        &nbsp;
+        {{#link-to (query-params l='en') }}EN{{/link-to}}
+        &nbsp;
+        <a target="_blank" href="http://transparency.darujme.sk/761">{{ t 'application.donate' }}&nbsp;{{ fa-icon "external-link" }}</a>
       </li>
     </ul>
 
     <div class="headline">
       <h1 class="title">
-        Majetkové priznania prokurátorov
+        {{ t 'application.headline' }}
       </h1>
 
       <h2 class="description">
-        Zoznam majetkových priznaní prokurátorov
-        za roky 2011 &ndash; 2014
-
+        {{ t 'application.description' }}
         <br>
 
         <small class="hidden-xs">
@@ -37,9 +39,9 @@
 
 <footer>
   <div class="container">
-    Dáta sú získané zo portálu <a target="_blank" href="https://www.genpro.gov.sk/prokuratura-sr/majetkove-priznania-30a3.html">Generálnej prokuratúry Slovenskej Republiky</a>. 
+    {{ t 'application.data_source' }} <a target="_blank" href="https://www.genpro.gov.sk/prokuratura-sr/majetkove-priznania-30a3.html">{{ t 'application.general_prosecutors_office' }}</a>.
     <br>
-    Udáje sú získané v originálnej podobe bez úprav a za ich správnosť autori portálu nezodpovedájú.
+    {{ t 'application.disclaimer' }}
     <br>
     <br>
     Copyright 2015 &middot;

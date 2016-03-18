@@ -3,14 +3,14 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   repository: Ember.inject.service('prosecutors-repository'),
   queryParams: {
-    q: {
+    query: {
       refreshModel: true
     }
   },
 
   model(params) {
-    if (params.q) {
-      return this.get('repository').search(params.q);
+    if (params.query) {
+      return this.get('repository').search(params.query);
     } else {
       return this.get('repository').all();
     }

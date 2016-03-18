@@ -1,11 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  queryParams: {
-    query: {
-      as: 'q'
-    }
-  },
+  queryParams: ['l'],
 
-  query: null
+  l: 'sk'
 });
