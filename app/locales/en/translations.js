@@ -8,7 +8,7 @@ export default {
   'application' : {
     'donate' : 'Help us to make judiciary more transparent',
     'headline' : 'Property Declarations of Prosecutors',
-    'description' : 'List of property declarations of prosecutors in 2011 &ndash; 2014',
+    'description' : 'List of property declarations of prosecutors in years of 2011 &ndash; 2014',
     'data_source': 'Data is obtained from public web page of ',
     'general_prosecutors_office' : 'General Prosecutor\'s Office of Slovak Republic',
     'disclaimer' : 'Data was acquired in original form without any further modification and authors are not responsible for its correctness.'
