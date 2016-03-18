@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
-  foldableContent: Ember.computed(function() { return [] }),
+  foldableContent: Ember.computed(function() { return []; }),
   initialFoldableCount: 50,
   foldableCount: Ember.computed('initialFoldableCount', function() { return this.get('initialFoldableCount'); }),
 
