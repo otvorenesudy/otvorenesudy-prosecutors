@@ -40,13 +40,21 @@ export default Ember.Service.extend({
     }
 
     return new Promise((resolve, reject) => {
+      var normalizedQuery = this._normalizeStringForSearch(query);
+
       this.get('data').then((data) => {
-        var filtered = data.filter(function(e) {
-          return e.name.value.toLowerCase().indexOf(query.toLowerCase()) !== -1 ? true : false;
+        var filtered = data.filter((e) => {
+          var name = e.normalizedName || (e.normalizedName = this._normalizeStringForSearch(e.name.value));
+
+          return name.indexOf(normalizedQuery) !== -1 ? true : false;
         });
 
         resolve(filtered);
       });
     });
+  },
+
+  _normalizeStringForSearch(string) {
+    return latinize(string).toLowerCase();
   }
 });
