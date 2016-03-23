@@ -41,6 +41,8 @@
   <div class="container">
     {{ t 'application.data_source' }} <a target="_blank" href="https://www.genpro.gov.sk/prokuratura-sr/majetkove-priznania-30a3.html">{{ t 'application.general_prosecutors_office' }}</a>.
     <br>
+    {{ t 'application.data_availability' }} <a target="_blank" href="{{ repository.url }}">GitHub</a>. {{ t 'application.data_updated_at' date=(moment-format repository.updatedAt 'DD. MM. YYYY') }}
+    <br>
     {{ t 'application.disclaimer' }}
     <br>
     <br>

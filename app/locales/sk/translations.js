@@ -14,7 +14,9 @@ export default {
     'description' : 'Zoznam majetkových priznaní prokurátorov za roky 2011 &ndash; 2014',
     'data_source': 'Dáta sú získané zo portálu',
     'general_prosecutors_office' : 'Generálnej prokuratúry Slovenskej Republiky',
-    'disclaimer' : 'Udáje sú získané v originálnej podobe bez úprav a za ich správnosť autori portálu nezodpovedájú.'
+    'disclaimer' : 'Udáje sú získané v originálnej podobe bez úprav a za ich správnosť autori portálu nezodpovedájú.',
+    'data_availability': 'Dáta su dostupné na službe',
+    'data_updated_at' : 'Dáta boli naposledy aktualizované {{ date }}.'
   },
 
   'loading' : {

@@ -9,9 +9,11 @@ export default {
     'donate' : 'Help us to make judiciary more transparent',
     'headline' : 'Property Declarations of Prosecutors',
     'description' : 'List of property declarations of prosecutors in years of 2011 &ndash; 2014',
-    'data_source': 'Data is obtained from public web page of ',
+    'data_source': 'Data was obtained from ',
     'general_prosecutors_office' : 'General Prosecutor\'s Office of Slovak Republic',
-    'disclaimer' : 'Data was acquired in original form without any further modification and authors are not responsible for its correctness.'
+    'disclaimer' : 'Data was acquired in original form without any modification and authors are not responsible for its accuracy.',
+    'data_availability': 'Data is available at',
+    'data_updated_at' : 'The last updated was performed on {{ date }}.'
   },
 
   'loading' : {
@@ -30,6 +32,7 @@ export default {
     'search_placeholder' : 'Search by name like Čentéš, Čižnár, Trnka, Šufliarsky ...'
   },
 
+  // Components
   'components' : {
     'property-declaration-table' : {
       'description': 'Name/Description',

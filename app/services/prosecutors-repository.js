@@ -1,12 +1,19 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Service.extend({
   data: null,
+  url: 'https://raw.githubusercontent.com/otvorenesudy/otvorenesudy-data/master/prosecutors-property-declarations-20160323152032.json',
+  updatedAt: Ember.computed('url', function() {
+    var datetime = this.get('url').match(/(\d{4}\d{2}\d{2}\d{2}\d{2}\d{2}).json$/)[1];
+
+    return moment(datetime, 'YYYYMMDDhhmmss').toDate();
+  }),
 
   init() {
     this._super(...arguments);
     var promise = new Promise((resolve, reject) => {
-      Ember.$.get('/prosecutors.json').then((data) => {
+      Ember.$.getJSON(this.get('url')).then((data) => {
         resolve(data.sortBy('name.last', 'name.middle', 'name.first'));
       });
     });
