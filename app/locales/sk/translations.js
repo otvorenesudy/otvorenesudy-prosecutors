@@ -12,7 +12,7 @@ export default {
     'donate' : 'Podporte náš boj za transparentnejšie súdnictvo',
     'headline' : 'Majetkové priznania prokurátorov',
     'description' : 'Zoznam majetkových priznaní prokurátorov za roky 2011 &ndash; 2014',
-    'data_source': 'Dáta sú získané zo portálu',
+    'data_source': 'Dáta sú získané z portálu',
     'general_prosecutors_office' : 'Generálnej prokuratúry Slovenskej Republiky',
     'disclaimer' : 'Udáje sú získané v originálnej podobe bez úprav a za ich správnosť autori portálu nezodpovedájú.',
     'data_availability': 'Dáta su dostupné na službe',
