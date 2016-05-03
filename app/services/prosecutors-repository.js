@@ -1,10 +1,9 @@
 import Ember from 'ember';
 import moment from 'moment';
-import latinize from 'opencourts-prosecutors/bower_components/latinize/latinize';
 
 export default Ember.Service.extend({
   data: null,
-  url: 'https://raw.githubusercontent.com/otvorenesudy/otvorenesudy-data/master/prosecutors-property-declarations-20160323152032.json',
+  url: 'https://raw.githubusercontent.com/otvorenesudy/otvorenesudy-data/master/prosecutors-property-declarations-20160503225933.json',
   updatedAt: Ember.computed('url', function() {
     var datetime = this.get('url').match(/(\d{4}\d{2}\d{2}\d{2}\d{2}\d{2}).json$/)[1];
 
