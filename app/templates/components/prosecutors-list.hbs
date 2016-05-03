@@ -9,7 +9,10 @@
             {{/link-to}}
 
             <small class="pull-right">
-              {{ t 'property_declaration' count=prosecutor.property_declarations.length }}
+              {{pretty-join
+                prosecutor.organisation
+                (t 'property_declaration' count=prosecutor.property_declarations.length)
+              }}
             </small>
           </h4>
         </li>

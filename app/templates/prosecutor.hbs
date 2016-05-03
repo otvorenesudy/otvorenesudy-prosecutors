@@ -3,9 +3,13 @@
     {{ model.name.value }}
     <br>
     <small>
-      {{ t 'prosecutor.description' years=(format-property-declarations-years model.property_declarations) }}
+      {{t 'prosecutor.description' years=(format-property-declarations-years model.property_declarations)}}
     </small>
   </h1>
+
+  <h4 class="text-center text-muted">
+    {{pretty-join model.position model.organisation model.municipality}}
+  </h4>
 
   <h4 class="text-center">
     {{#link-to 'application' }}{{ t 'prosecutor.prosecutors_list'}}{{/link-to}}
