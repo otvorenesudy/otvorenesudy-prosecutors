@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import moment from 'moment';
+import latinize from 'opencourts-prosecutors/bower_components/latinize/latinize';
 
 export default Ember.Service.extend({
   data: null,
@@ -12,7 +13,7 @@ export default Ember.Service.extend({
 
   init() {
     this._super(...arguments);
-    var promise = new Promise((resolve, reject) => {
+    var promise = new Ember.RSVP.Promise((resolve) => {
       Ember.$.getJSON(this.get('url')).then((data) => {
         resolve(data.sortBy('name.last', 'name.middle', 'name.first'));
       });
@@ -26,7 +27,7 @@ export default Ember.Service.extend({
   },
 
   find(name) {
-    return new Promise((resolve, reject) => {
+    return new Ember.RSVP.Promise((resolve, reject) => {
       this.get('data').then((data) => {
         var prosecutor = data.find(function(e) {
           return e.name.value === name;
@@ -46,7 +47,7 @@ export default Ember.Service.extend({
       return this.all();
     }
 
-    return new Promise((resolve, reject) => {
+    return new Ember.RSVP.Promise((resolve) => {
       var normalizedQuery = this._normalizeStringForSearch(query);
 
       this.get('data').then((data) => {
