@@ -55,7 +55,8 @@ export default {
     },
 
     'prosecutors-list' : {
-      'unfold_more' : 'Zobraziť dalších prokurátorov'
+      'unfold_more' : 'Zobraziť dalších prokurátorov',
+      'metadata': 'Ďalšie informácie'
     }
   }
 };

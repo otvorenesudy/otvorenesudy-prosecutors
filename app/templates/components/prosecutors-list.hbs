@@ -9,10 +9,8 @@
             {{/link-to}}
 
             <small class="pull-right">
-              {{pretty-join
-                prosecutor.organisation
-                (t 'property_declaration' count=prosecutor.property_declarations.length)
-              }}
+              {{prosecutor-metadata prosecutor=prosecutor}}
+              {{t 'property_declaration' count=prosecutor.property_declarations.length}}
             </small>
           </h4>
         </li>

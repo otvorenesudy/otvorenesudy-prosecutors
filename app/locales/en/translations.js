@@ -53,7 +53,8 @@ export default {
     },
 
     'prosecutors-list' : {
-      'unfold_more' : 'Show more prosecutors'
+      'unfold_more' : 'Show more prosecutors',
+      'metadata': 'More Information'
     }
   }
 };

@@ -94,6 +94,11 @@ section#prosecutors-heading {
   }
 }
 
+.dotted-underline {
+  border-bottom: 1px #999 dotted;
+  cursor: help;
+}
+
 footer {
   @extend .text-center;
   @extend .text-muted;
