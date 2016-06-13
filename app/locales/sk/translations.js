@@ -16,7 +16,11 @@ export default {
     'general_prosecutors_office' : 'Generálnej prokuratúry Slovenskej Republiky',
     'disclaimer' : 'Udáje sú získané v originálnej podobe bez úprav a za ich správnosť autori portálu nezodpovedájú.',
     'data_availability': 'Dáta su dostupné na službe',
-    'data_updated_at' : 'Dáta boli naposledy aktualizované {{ date }}.'
+    'data_updated_at' : 'Dáta boli naposledy aktualizované {{ date }}.',
+    'message_1' : 'Prokurátori odmietajú zverejňovať čo i len svoje pôsobisko. Ak ich poznáte, pomôžte umožniť lepšiu kontrolu ich práce. Ak sa to podarí, postupne budeme vedieť spájať prokurátorov s ich rozhodnutiami a tak zvýšiť kvalitu ich práce.',
+    'message_2' : 'Ak žiadneho prokurátora nepoznáte, ale veríte, že vyvodzovanie zodpovednosti voči nim je pre Slovensko kľúčové',
+    'message_2_link': 'podporte našu snahu finančne',
+    'message_3' : 'Ďakujeme.'
   },
 
   'loading' : {
