@@ -8,7 +8,6 @@ html, body {
 .jumbotron {
   @include linear-gradient(15deg, darken($base-color, 15%), lighten($base-color, 10%));
 
-  height: 520px;
   padding-top: 20px;
   position: relative;
 
@@ -48,7 +47,7 @@ html, body {
 }
 
 .headline {
-  margin-top: 12.5%;
+  margin-top: 10%;
   margin-left: 8%;
   margin-right: 8%;
   text-align: center;

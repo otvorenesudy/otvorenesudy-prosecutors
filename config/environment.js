@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'opencourts-prosecutors',
+    podModulePrefix: 'opencourts-prosecutors/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

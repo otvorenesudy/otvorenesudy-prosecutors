@@ -1,6 +1,6 @@
 <section id="property-declaration-headline" class="text-center">
   <h1>
-    {{ model.name.value }}
+    {{model.name.value}}
     <br>
     <small>
       {{t 'prosecutor.description' years=(format-property-declarations-years model.property_declarations)}}
@@ -12,12 +12,12 @@
   </h4>
 
   <h4 class="text-center">
-    {{#link-to 'application' }}{{ t 'prosecutor.prosecutors_list'}}{{/link-to}}
+    {{#link-to 'application'}}{{t 'prosecutor.prosecutors_list'}}{{/link-to}}
     &middot;
-    <a target="_blank" href="https://otvorenesudy.sk/judges/search?q={{ model.name.value }}">{{ t 'prosecutor.search' }}</a>
+    <a target="_blank" href="https://otvorenesudy.sk/judges/search?q={{model.name.value}}">{{ t 'prosecutor.search' }}</a>
   </h4>
 </section>
 
 <div class="property-declarations-list">
-  {{ property-declarations-list propertyDeclarations=model.property_declarations }}
+  {{prosecutor/property-declarations-list propertyDeclarations=model.property_declarations}}
 </div>

@@ -1,0 +1,58 @@
+<div class="jumbotron">
+  <div class="container">
+    {{#link-to 'application' class="logo"}}
+      <img src="/assets/images/logo.svg" alt="Otvorené Súdy">
+    {{/link-to}}
+
+    <ul class="links list-inline pull-right">
+      <li>
+        {{#link-to (query-params l='sk')}}SK{{/link-to}}
+        &nbsp;
+        {{#link-to (query-params l='en')}}EN{{/link-to}}
+        &nbsp;
+        <a target="_blank" href="http://transparency.darujme.sk/761">{{t 'application.donate'}}&nbsp;{{fa-icon "external-link"}}</a>
+      </li>
+    </ul>
+
+    <div class="headline">
+      <h1 class="title">
+        {{t 'application.headline'}}
+      </h1>
+
+      <h2 class="description">
+        {{t 'application.description'}}
+        <br>
+      </h2>
+
+      <p class="message">
+        {{t 'application.message_1'}}
+        <br>
+        <br>
+        {{t 'application.message_2'}}, <a target="_blank" href="http://transparency.darujme.sk/761">{{t 'application.message_2_link'}}&nbsp;{{fa-icon "external-link"}}</a>.
+        <br>
+        <br>
+        {{t 'application.message_3'}}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container content">
+  {{outlet}}
+</div>
+
+<footer>
+  <div class="container">
+    {{t 'application.data_source'}} <a target="_blank" href="https://www.genpro.gov.sk/prokuratura-sr/majetkove-priznania-30a3.html">{{t 'application.general_prosecutors_office'}}</a>.
+    <br>
+    {{t 'application.data_availability'}} <a target="_blank" href="{{repository.url}}">GitHub</a>. {{t 'application.data_updated_at' date=(moment-format repository.updatedAt 'DD. MM. YYYY')}}
+    <br>
+    {{t 'application.disclaimer'}}
+    <br>
+    <br>
+    Copyright 2016 &middot;
+    <a target="_blank" href="https://github.com/otvorenesudy/otvorenesudy-prosecutors">GitHub</a> &middot; 
+    <a target="_blank" href="https://otvorenesudy.sk">Otvorené Súdy</a> &middot;
+    <a target="_blank" href="http://transparency.sk">Transparency International Slovensko</a>
+  </div>
+</footer>
