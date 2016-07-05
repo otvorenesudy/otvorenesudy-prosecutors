@@ -61,6 +61,31 @@ export default {
     'prosecutors-list' : {
       'unfold_more' : 'Zobraziť dalších prokurátorov',
       'metadata': 'Ďalšie informácie'
+    },
+
+   'prosecutor-metadata' : {
+      'refine' : 'Doplniť',
+      'refine_tooltip' : 'Doplniť'
+    },
+
+    'prosecutors': {
+      'refine': {
+        'refinement-form': {
+          'close': 'Zavrieť',
+          'save': 'Uložiť',
+          'title': 'Pomôžte nám doplniť pôsobisko prokurátorov',
+          'select_an_office': 'Vyberte prokuratúru',
+          'select_a_prosecutor': 'Zadajte mená prokurátorov',
+          'prosecutor_office': 'Prokuratúra',
+          'prosecutors_in_office': 'Prokurátori, ktorí pracujú na zvolenej prokuratúre',
+          'success_title': 'Ďakujeme Vám.',
+          'success_message': 'Váš príspevok sme úspešne uložili a onedlho ho zverejníme.',
+          'errors': {
+            'office_is_required': 'Zvoľte prokuratúru.',
+            'prosecutors_are_required': 'Zvoľte aspoň jedného prokurátora.'
+          }
+        }
+      }
     }
   }
 };

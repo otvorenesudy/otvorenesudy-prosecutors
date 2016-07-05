@@ -59,6 +59,31 @@ export default {
     'prosecutors-list' : {
       'unfold_more' : 'Show more prosecutors',
       'metadata': 'More Information'
+    },
+
+   'prosecutor-metadata' : {
+      'refine' : 'Refine',
+      'refine_tooltip' : 'Refine'
+    },
+
+    'prosecutors': {
+      'refine': {
+        'refinement-form': {
+          'title': 'Help us to extend data about prosecutors',
+          'select_an_office': 'Select an office',
+          'close': 'Close',
+          'save': 'Save',
+          'select_a_prosecutor': 'Type in the names of prosecutors',
+          'prosecutor_office': 'Public Prosecutor\'s Office',
+          'prosecutors_in_office': 'Prosecutors working at selected office',
+          'success_title': 'Thank you.',
+          'success_message': 'We\'ve successfully saved your refinement and shortly we\'ll make it public.',
+          'errors': {
+            'office_is_required': 'Select an office.',
+            'prosecutors_are_required': 'Select at least one of the prosecutors.'
+          }
+        }
+      }
     }
   }
 };
