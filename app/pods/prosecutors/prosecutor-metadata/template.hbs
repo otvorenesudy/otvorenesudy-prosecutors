@@ -1,6 +1,6 @@
 {{#if canShow}}
   <span class="dotted-underline" data-toggle="tooltip" data-title="{{pretty-join prosecutor.position prosecutor.organisation prosecutor.municipality}}">{{prosecutor.organisation}}</span>
 {{else}}
-  {{#link-to 'prosecutors.refine' class="text-primary"}}{{t 'components.prosecutor-metadata.refine'}}{{/link-to}}
+  {{#link-to 'prosecutors.refine' (query-params prosecutor=prosecutor.name.value) class="text-primary"}}{{t 'components.prosecutor-metadata.refine'}}{{/link-to}}
 {{/if}}
 &middot;

@@ -7,8 +7,16 @@ export default Ember.Component.extend({
   isSaving: false,
   isSaved: false,
   selectedOffice: null,
-  selectedProsecutors: Ember.computed(function() {
-    return Ember.A();
+  selectedProsecutors: Ember.computed('initialSelectedProsecutor', function() {
+    if (this.get('initialSelectedProsecutor')) {
+      let prosecutor = this.get('prosecutors').find((prosecutor) => {
+        return prosecutor.name.value === this.get('initialSelectedProsecutor');
+      });
+
+      return [prosecutor];
+    } else {
+      return Ember.A();
+    }
   }),
 
   didInsertElement() {
@@ -59,7 +67,7 @@ export default Ember.Component.extend({
       if (this.validate()) {
         let promise = new Ember.RSVP.Promise((resolve, reject) => {
           $.ajax({
-            url: 'http://prokuratori.otvorenesudy.sk/public/prosecutor_refinements.json',
+            url: 'https://prokuratori.otvorenesudy.sk/public/prosecutor_refinements.json',
             method: 'POST',
             data: {
               name: this.get('name'),
