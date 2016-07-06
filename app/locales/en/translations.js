@@ -78,9 +78,17 @@ export default {
           'prosecutors_in_office': 'Prosecutors working at selected office',
           'success_title': 'Thank you.',
           'success_message': 'We\'ve successfully saved your refinement and shortly we\'ll make it public.',
+          'email_label': 'Your Email',
+          'email_placeholder': 'peter.pan@example.com',
+          'name_placeholder': 'Peter Pan',
+          'name_label': 'Your Name',
           'errors': {
             'office_is_required': 'Select an office.',
-            'prosecutors_are_required': 'Select at least one of the prosecutors.'
+            'prosecutors_are_required': 'Select at least one of the prosecutors.',
+            'name_is_required': 'Specify your name.',
+            'email_is_required': 'Specify your email.',
+            'email_is_invalid': 'Email is invalid.',
+            'server_error': 'Oops, something went wrong. Please, continue later. We\'re working on it!'
           }
         }
       }

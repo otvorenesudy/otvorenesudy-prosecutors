@@ -80,9 +80,17 @@ export default {
           'prosecutors_in_office': 'Prokurátori, ktorí pracujú na zvolenej prokuratúre',
           'success_title': 'Ďakujeme Vám.',
           'success_message': 'Váš príspevok sme úspešne uložili a onedlho ho zverejníme.',
+          'email_label': 'Váš email',
+          'email_placeholder': 'peter.pan@example.com',
+          'name_placeholder': 'Peter Pan',
+          'name_label': 'Vaše meno',
           'errors': {
             'office_is_required': 'Zvoľte prokuratúru.',
-            'prosecutors_are_required': 'Zvoľte aspoň jedného prokurátora.'
+            'prosecutors_are_required': 'Zvoľte aspoň jedného prokurátora.',
+            'name_is_required': 'Uvedte Vaše meno.',
+            'email_is_required': 'Uvedte Váš email.',
+            'email_is_invalid': 'Email nemá správny formát.',
+            'server_error': 'Ups, niečo sa pokazilo. Prosím, pokračujte neskôr.'
           }
         }
       }
