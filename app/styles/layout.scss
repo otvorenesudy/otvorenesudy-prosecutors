@@ -15,6 +15,23 @@ html, body {
     max-width: 970px;
   }
 
+  .btn {
+    border-color: lighten($base-color, 10%);
+    background-color: lighten($base-color, 10%);
+    color: white;
+    font-weight: 400;
+
+    &:hover {
+      border-color: lighten($base-color, 7.5%);
+      background-color: lighten($base-color, 7.5%);
+    }
+
+    &:active {
+      border-color: lighten($base-color, 5%);
+      background-color: lighten($base-color, 5%);
+    }
+  }
+
   ul.links {
     li a {
       @include transition(all 0.8s ease);

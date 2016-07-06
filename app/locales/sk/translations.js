@@ -20,7 +20,8 @@ export default {
     'message_1' : 'Prokurátori odmietajú zverejňovať čo i len svoje pôsobisko. Ak ich poznáte, pomôžte umožniť lepšiu kontrolu ich práce. Ak sa to podarí, postupne budeme vedieť spájať prokurátorov s ich rozhodnutiami a tak zvýšiť kvalitu ich práce.',
     'message_2' : 'Ak žiadneho prokurátora nepoznáte, ale veríte, že vyvodzovanie zodpovednosti voči nim je pre Slovensko kľúčové',
     'message_2_link': 'podporte našu snahu finančne',
-    'message_3' : 'Ďakujeme.'
+    'message_3' : 'Ďakujeme.',
+    'refine': 'Chcem doplniť posobisko prokurátorov'
   },
 
   'loading' : {
