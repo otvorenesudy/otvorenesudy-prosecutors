@@ -67,7 +67,7 @@ export default Ember.Component.extend({
       if (this.validate()) {
         let promise = new Ember.RSVP.Promise((resolve, reject) => {
           $.ajax({
-            url: 'https://prokuratori.otvorenesudy.sk/public/prosecutor_refinements.json',
+            url: 'https://api.otvorenesudy.sk/public/prosecutor_refinements.json',
             method: 'POST',
             data: {
               name: this.get('name'),
