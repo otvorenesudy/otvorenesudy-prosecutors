@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  queryParams: ['prosecutor']
+  queryParams: ['prosecutor'],
+  prosecutor: null
 });

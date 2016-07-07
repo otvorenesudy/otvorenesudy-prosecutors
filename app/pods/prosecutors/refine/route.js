@@ -78,6 +78,10 @@ export default Ember.Route.extend({
     controller.set('prosecutors', model);
   },
 
+  deactivate() {
+    this.get('controller').set('prosecutor', null);
+  },
+
   actions: {
     close() {
       this.transitionTo('prosecutors');
