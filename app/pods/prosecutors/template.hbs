@@ -1,0 +1,28 @@
+<section id="prosecutors-heading">
+  <h1 class="text-center">
+    {{t 'prosecutors.list'}}
+
+    <small>
+      <br>
+
+      {{t 'prosecutors.description' count=model.length}}
+    </small>
+  </h1>
+</section>
+
+<section id="prosecutors-controls">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="input-group">
+        <span class="input-group-addon">{{fa-icon 'search'}}</span>
+        {{input value=query id="q" type="text" class="form-control" name="q" placeholder=(t 'prosecutors.search_placeholder') autocomplete="off"}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prosecutors-list">
+  {{prosecutors/prosecutors-list prosecutors=model}}
+</section>
+
+{{outlet}}

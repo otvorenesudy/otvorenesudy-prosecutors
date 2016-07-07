@@ -5,7 +5,14 @@ $link-color: $base-color !default;
 $btn-primary-bg: lighten($base-color, 15%) !default;
 $input-border-focus: lighten($base-color, 30%) !default;
 
+$btn-font-weight: 300 !important;
+$font-weight: 300 !important;
 $headings-font-weight: 300 !important;
+
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
 
 $spacer-y: 0.5rem;
 $spacer-x: 0.2rem;

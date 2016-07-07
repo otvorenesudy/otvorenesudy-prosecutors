@@ -6,6 +6,9 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     'ember-cli-bootstrap-sassy': {
       'glyphicons': false
+    },
+    'ember-cli-selectize': {
+      'theme': false
     }
   });
 

@@ -8,12 +8,28 @@ html, body {
 .jumbotron {
   @include linear-gradient(15deg, darken($base-color, 15%), lighten($base-color, 10%));
 
-  height: 520px;
   padding-top: 20px;
   position: relative;
 
   .container {
     max-width: 970px;
+  }
+
+  .btn {
+    border-color: lighten($base-color, 10%);
+    background-color: lighten($base-color, 10%);
+    color: white;
+    font-weight: 400;
+
+    &:hover {
+      border-color: lighten($base-color, 7.5%);
+      background-color: lighten($base-color, 7.5%);
+    }
+
+    &:active {
+      border-color: lighten($base-color, 5%);
+      background-color: lighten($base-color, 5%);
+    }
   }
 
   ul.links {
@@ -48,7 +64,7 @@ html, body {
 }
 
 .headline {
-  margin-top: 12.5%;
+  margin-top: 10%;
   margin-left: 8%;
   margin-right: 8%;
   text-align: center;

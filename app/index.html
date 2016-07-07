@@ -17,16 +17,16 @@
     {{content-for "head"}}
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/opencourts-prosecutors.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/opencourts-prosecutors.css">
 
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/opencourts-prosecutors.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/opencourts-prosecutors.js"></script>
 
     {{content-for "body-footer"}}
   </body>

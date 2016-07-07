@@ -20,7 +20,8 @@ export default {
     'message_1' : 'Prokurátori odmietajú zverejňovať čo i len svoje pôsobisko. Ak ich poznáte, pomôžte umožniť lepšiu kontrolu ich práce. Ak sa to podarí, postupne budeme vedieť spájať prokurátorov s ich rozhodnutiami a tak zvýšiť kvalitu ich práce.',
     'message_2' : 'Ak žiadneho prokurátora nepoznáte, ale veríte, že vyvodzovanie zodpovednosti voči nim je pre Slovensko kľúčové',
     'message_2_link': 'podporte našu snahu finančne',
-    'message_3' : 'Ďakujeme.'
+    'message_3' : 'Ďakujeme.',
+    'refine': 'Chcem doplniť posobisko prokurátorov'
   },
 
   'loading' : {
@@ -61,6 +62,39 @@ export default {
     'prosecutors-list' : {
       'unfold_more' : 'Zobraziť dalších prokurátorov',
       'metadata': 'Ďalšie informácie'
+    },
+
+   'prosecutor-metadata' : {
+      'refine' : 'Doplniť',
+      'refine_tooltip' : 'Doplniť'
+    },
+
+    'prosecutors': {
+      'refine': {
+        'refinement-form': {
+          'close': 'Zavrieť',
+          'save': 'Uložiť',
+          'title': 'Pomôžte nám doplniť pôsobisko prokurátorov',
+          'select_an_office': 'Vyberte prokuratúru',
+          'select_a_prosecutor': 'Zadajte mená prokurátorov',
+          'prosecutor_office': 'Prokuratúra',
+          'prosecutors_in_office': 'Prokurátori, ktorí pracujú na zvolenej prokuratúre',
+          'success_title': 'Ďakujeme Vám.',
+          'success_message': 'Váš príspevok sme úspešne uložili a onedlho ho zverejníme.',
+          'email_label': 'Váš email',
+          'email_placeholder': 'peter.pan@example.com',
+          'name_placeholder': 'Peter Pan',
+          'name_label': 'Vaše meno',
+          'errors': {
+            'office_is_required': 'Zvoľte prokuratúru.',
+            'prosecutors_are_required': 'Zvoľte aspoň jedného prokurátora.',
+            'name_is_required': 'Uvedte Vaše meno.',
+            'email_is_required': 'Uvedte Váš email.',
+            'email_is_invalid': 'Email nemá správny formát.',
+            'server_error': 'Ups, niečo sa pokazilo. Prosím, pokračujte neskôr.'
+          }
+        }
+      }
     }
   }
 };

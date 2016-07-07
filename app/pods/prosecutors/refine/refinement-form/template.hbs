@@ -1,0 +1,77 @@
+<div class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">{{t 'components.prosecutors.refine.refinement-form.title'}}</h4>
+      </div>
+      <div class="modal-body">
+        {{#if isSaved}}
+          <h5 class="text-center">
+            {{t 'components.prosecutors.refine.refinement-form.success_title'}}
+            <br>
+            <br>
+            {{t 'components.prosecutors.refine.refinement-form.success_message'}}
+          </h5>
+        {{else}}
+          <form>
+            <div class="form-group">
+              <label for="selected-office">{{t 'components.prosecutors.refine.refinement-form.prosecutor_office'}}</label>
+
+              {{ember-selectize
+                content=offices
+                optionValuePath='content'
+                optionLabelPath='content'
+                placeholder=(t 'components.prosecutors.refine.refinement-form.select_an_office')
+                selection=selectedOffice
+                id='selected-office'
+                class='form-control'
+              }}
+            </div>
+
+            <div class="form-group">
+              <label>{{t 'components.prosecutors.refine.refinement-form.prosecutors_in_office'}}</label>
+
+              {{ember-selectize
+                content=prosecutors
+                multiple=true
+                optionValuePath='content.name.value'
+                optionLabelPath='content.name.value'
+                selection=selectedProsecutors
+                placeholder=(t 'components.prosecutors.refine.refinement-form.select_a_prosecutor')
+              }}
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-6">
+                <label>{{t 'components.prosecutors.refine.refinement-form.name_label'}}</label>
+
+                {{input value=name class="form-control" placeholder=(t 'components.prosecutors.refine.refinement-form.name_placeholder')}}
+              </div>
+
+              <div class="col-md-6">
+                <label>{{t 'components.prosecutors.refine.refinement-form.email_label'}}</label>
+
+                {{input value=email class="form-control" placeholder=(t 'components.prosecutors.refine.refinement-form.email_placeholder')}}
+              </div>
+            </div>
+          </form>
+        {{/if}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">{{t 'components.prosecutors.refine.refinement-form.close'}}</button>
+        {{#unless isSaved}}
+          <button type="button" class="btn btn-primary" {{action 'save'}}>
+            {{t 'components.prosecutors.refine.refinement-form.save'}}
+
+            {{#if isSaving}}
+              {{fa-icon 'circle-o-notch' spin=true}}
+            {{/if}}
+          </button>
+        {{/unless}}
+      </div>
+    </div>
+  </div>
+</div>
