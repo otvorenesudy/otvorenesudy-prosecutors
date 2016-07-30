@@ -29,7 +29,11 @@ export default {
   'prosecutor' : {
     'description': 'Property declarations for years of {{ years }}',
     'prosecutors_list' : 'List of Prosecutors',
-    'search' : 'Search on Otvorené Súdy'
+    'search' : 'Search on Otvorené Súdy',
+    'report_incorrect_organisation': 'Report Incorrect Office',
+    'refine': 'Refine Office',
+    'report_subject': 'Chybné pôsobisko prokurátora {{name}}',
+    'report_body': 'Dobrý deň,%0D%0A%0D%0Aprokurátor {{name}} nepracuje na prokuratúre {{organisation}}.%0D%0A%0D%0AViem o tom, pretože ...%0D%0A%0D%0APodľa mojich informácií pracuje na ...%0D%0A%0D%0AS pozdravom,%0D%0A...'
   },
 
   'prosecutors' : {

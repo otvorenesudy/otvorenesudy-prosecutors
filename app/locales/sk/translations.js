@@ -32,7 +32,11 @@ export default {
   'prosecutor' : {
     'description': 'Majetkové priznania za roky {{ years }}',
     'prosecutors_list' : 'Zoznam prokurátorov',
-    'search' : 'Vyhľadať na Otvorené Súdy'
+    'search' : 'Vyhľadať na Otvorené Súdy',
+    'report_incorrect_organisation': 'Nahlásiť nesprávnu prokuratúru',
+    'report_subject': 'Chybné pôsobisko prokurátora {{name}}',
+    'report_body': 'Dobrý deň,%0D%0A%0D%0Aprokurátor {{name}} nepracuje na prokuratúre {{organisation}}.%0D%0A%0D%0AViem o tom, pretože ...%0D%0A%0D%0APodľa mojich informácií pracuje na ...%0D%0A%0D%0AS pozdravom,%0D%0A...',
+    'refine': 'Doplniť prokuratúru'
   },
 
   'prosecutors' : {

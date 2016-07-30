@@ -14,7 +14,13 @@
   <h4 class="text-center">
     {{#link-to 'application'}}{{t 'prosecutor.prosecutors_list'}}{{/link-to}}
     &middot;
-    <a target="_blank" href="https://otvorenesudy.sk/judges/search?q={{model.name.value}}">{{ t 'prosecutor.search' }}</a>
+    {{#if model.organisation}}
+      <a target="_blank" href="mailto:kontakt@otvorenesudy.sk?subject={{t 'prosecutor.report_subject' name=model.name.value}}&body={{t 'prosecutor.report_body' name=model.name.value organisation=model.organisation}}">{{t 'prosecutor.report_incorrect_organisation'}}</a>
+    {{else}}
+      {{#link-to 'prosecutors.refine' (query-params prosecutor=model.name.value) class="text-primary"}}{{t 'prosecutor.refine'}}{{/link-to}}
+    {{/if}}
+    &middot;
+    <a target="_blank" href="https://otvorenesudy.sk/judges/search?q={{model.name.value}}">{{t 'prosecutor.search'}}</a>
   </h4>
 </section>
 
