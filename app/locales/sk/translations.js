@@ -17,10 +17,11 @@ export default {
     'disclaimer' : 'Udáje sú získané v originálnej podobe bez úprav a za ich správnosť autori portálu nezodpovedájú.',
     'data_availability': 'Dáta su dostupné na službe',
     'data_updated_at' : 'Dáta boli naposledy aktualizované {{ date }}.',
-    'message_1' : 'Prokurátori odmietajú zverejňovať čo i len svoje pôsobisko. Ak ich poznáte, pomôžte umožniť lepšiu kontrolu ich práce. Ak sa to podarí, postupne budeme vedieť spájať prokurátorov s ich rozhodnutiami a tak zvýšiť kvalitu ich práce.',
-    'message_2' : 'Ak žiadneho prokurátora nepoznáte, ale veríte, že vyvodzovanie zodpovednosti voči nim je pre Slovensko kľúčové',
-    'message_2_link': 'podporte našu snahu finančne',
-    'message_3' : 'Ďakujeme.',
+    'message_1': 'Zo 146 556 trestných rozhodnutí na portáli Otvorené Súdy je až 70 067 Trestných rozkazov a 29 510 Dohôd o vine a treste. Až v 68 % trestných prípadov, tak o vine, či nevine ako aj výške trestu reálne rozhoduje prokurátor a nie sudca.',
+    'message_2' : 'Napriek tomu prokurátori odmietajú zverejňovať čo i len svoje pôsobisko. Ak ich poznáte, pomôžte umožniť lepšiu kontrolu ich práce. Ak sa to podarí, postupne budeme vedieť spájať prokurátorov s ich rozhodnutiami a tak zvýšiť kvalitu ich práce.',
+    'message_3' : 'Ak žiadneho prokurátora nepoznáte, ale veríte, že vyvodzovanie zodpovednosti voči nim je pre Slovensko kľúčové',
+    'message_3_link': 'podporte našu snahu finančne',
+    'message_4' : 'Ďakujeme.',
     'refine': 'Chcem doplniť posobisko prokurátorov'
   },
 

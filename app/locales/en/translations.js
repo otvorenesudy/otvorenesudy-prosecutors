@@ -14,10 +14,11 @@ export default {
     'disclaimer' : 'Data was acquired in original form without any modification and authors are not responsible for its accuracy.',
     'data_availability': 'Data is available at',
     'data_updated_at' : 'The last updated was performed on {{ date }}.',
-    'message_1' : 'Prosecutiors refuse to publish as much as information about where they work. If you know any of them, please help us in controlling them. If we succeed, in time we will be able to connect their names with their decisions and therefore push for the quality of their work.',
-    'message_2' : 'If you do not know any prosecutor but believe that holding them accountable is one of the crucial tasks for Slovakia',
-    'message_2_link': 'support our efforts financially.',
-    'message_3' : 'Thank you.',
+    'message_1': 'Out of 146 556 criminal decrees published on Open Courts website, 70 067 is a criminal ban and 29 510 is a criminal charge settlement. Therefore, in 68% of criminal cases, not the judge, but a prosecutor gives the judgments about legitimacy of a criminal case and the length of the punishment.',
+    'message_2' : 'Despite that, the prosecutors refuse to publish as much as information about where they work. If you know any of them, please help us in controlling them. If we succeed, in time we will be able to connect their names with their decisions and therefore push for the quality of their work.',
+    'message_3' : 'If you do not know any prosecutor but believe that holding them accountable is one of the crucial tasks for Slovakia',
+    'message_3_link': 'support our efforts financially.',
+    'message_4' : 'Thank you.',
     'refine': 'Refine offices of prosecutors now'
   },
 
