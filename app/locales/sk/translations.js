@@ -17,10 +17,11 @@ export default {
     'disclaimer' : 'Udáje sú získané v originálnej podobe bez úprav a za ich správnosť autori portálu nezodpovedájú.',
     'data_availability': 'Dáta su dostupné na službe',
     'data_updated_at' : 'Dáta boli naposledy aktualizované {{ date }}.',
-    'message_1' : 'Prokurátori odmietajú zverejňovať čo i len svoje pôsobisko. Ak ich poznáte, pomôžte umožniť lepšiu kontrolu ich práce. Ak sa to podarí, postupne budeme vedieť spájať prokurátorov s ich rozhodnutiami a tak zvýšiť kvalitu ich práce.',
-    'message_2' : 'Ak žiadneho prokurátora nepoznáte, ale veríte, že vyvodzovanie zodpovednosti voči nim je pre Slovensko kľúčové',
-    'message_2_link': 'podporte našu snahu finančne',
-    'message_3' : 'Ďakujeme.',
+    'message_1': 'Zo 146 556 trestných rozhodnutí na portáli Otvorené Súdy je až 70 067 Trestných rozkazov a 29 510 Dohôd o vine a treste. Až v 68 % trestných prípadov, tak o vine, či nevine ako aj výške trestu reálne rozhoduje prokurátor a nie sudca.',
+    'message_2' : 'Napriek tomu prokurátori odmietajú zverejňovať čo i len svoje pôsobisko. Ak ich poznáte, pomôžte umožniť lepšiu kontrolu ich práce. Ak sa to podarí, postupne budeme vedieť spájať prokurátorov s ich rozhodnutiami a tak zvýšiť kvalitu ich práce.',
+    'message_3' : 'Ak žiadneho prokurátora nepoznáte, ale veríte, že vyvodzovanie zodpovednosti voči nim je pre Slovensko kľúčové',
+    'message_3_link': 'podporte našu snahu finančne',
+    'message_4' : 'Ďakujeme.',
     'refine': 'Chcem doplniť posobisko prokurátorov'
   },
 
@@ -31,7 +32,11 @@ export default {
   'prosecutor' : {
     'description': 'Majetkové priznania za roky {{ years }}',
     'prosecutors_list' : 'Zoznam prokurátorov',
-    'search' : 'Vyhľadať na Otvorené Súdy'
+    'search' : 'Vyhľadať na Otvorené Súdy',
+    'report_incorrect_organisation': 'Nahlásiť nesprávnu prokuratúru',
+    'report_subject': 'Chybné pôsobisko prokurátora {{name}}',
+    'report_body': 'Dobrý deň,%0D%0A%0D%0Aprokurátor {{name}} nepracuje na prokuratúre {{organisation}}.%0D%0A%0D%0AViem o tom, pretože ...%0D%0A%0D%0APodľa mojich informácií pracuje na ...%0D%0A%0D%0AS pozdravom,%0D%0A...',
+    'refine': 'Doplniť prokuratúru'
   },
 
   'prosecutors' : {
