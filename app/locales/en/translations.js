@@ -7,7 +7,7 @@ export default {
   // Views
   'application' : {
     'donate' : 'Help us to make judiciary more transparent',
-    'headline' : 'Property Declarations of Prosecutors',
+    'headline' : 'Help us to make slovak judiciary transparent',
     'description' : 'List of property declarations of prosecutors in years of 2011 &ndash; 2014',
     'data_source': 'Data was obtained from ',
     'general_prosecutors_office' : 'General Prosecutor\'s Office of Slovak Republic',
@@ -38,7 +38,7 @@ export default {
 
   'prosecutors' : {
     'list' : 'List of Prosecutors',
-    'description' : 'Searching in a list of {{ count }} prosecutors',
+    'description' : 'Searching in a list of {{ count }} prosecutors in years of <br> 2011 &ndash; 2014',
     'search_placeholder' : 'Search by name like Čentéš, Čižnár, Trnka, Šufliarsky ...'
   },
 

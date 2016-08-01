@@ -10,7 +10,7 @@ export default {
   // Views
   'application' : {
     'donate' : 'Podporte náš boj za transparentnejšie súdnictvo',
-    'headline' : 'Majetkové priznania prokurátorov',
+    'headline' : 'Pomôžte nám otvoriť slovenskú prokuratúru',
     'description' : 'Zoznam majetkových priznaní prokurátorov za roky 2011 &ndash; 2014',
     'data_source': 'Dáta sú získané z portálu',
     'general_prosecutors_office' : 'Generálnej prokuratúry Slovenskej Republiky',
@@ -41,7 +41,7 @@ export default {
 
   'prosecutors' : {
     'list' : 'Zoznam prokurátorov',
-    'description' : 'Vyhľadávate v zozname majetkových priznaní {{ count }} prokurátorov',
+    'description' : 'Vyhľadávate v zozname majetkových priznaní {{ count }} prokurátorov <br> za roky 2011 &ndash; 2014',
     'search_placeholder' : 'Vyhľadávajte podľa mena ako Čentéš, Čižnár, Trnka, Šufliarsky ...'
   },
 
