@@ -22,7 +22,7 @@ export default {
     'message_3' : 'Ak žiadneho prokurátora nepoznáte, ale veríte, že vyvodzovanie zodpovednosti voči nim je pre Slovensko kľúčové',
     'message_3_link': 'podporte našu snahu finančne',
     'message_4' : 'Ďakujeme.',
-    'refine': 'Chcem doplniť posobisko prokurátorov'
+    'refine': 'Chcem doplniť pôsobisko prokurátorov'
   },
 
   'loading' : {
