@@ -42,7 +42,7 @@ export default Ember.Service.extend({
   },
 
   search(query) {
-    if (!query) {
+    if (!query || query.length <= 1) {
       return this.all();
     }
 
