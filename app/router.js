@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('prosecutors', { path: '/' }, function() {
     this.route('refine');
   });
-  this.route('prosecutor', { path: '/:name' });
+  this.route('prosecutor', { path: '/prosecutor/:name' });
 });
 
 export default Router;
