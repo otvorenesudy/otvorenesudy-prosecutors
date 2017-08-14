@@ -3,7 +3,7 @@ import moment from 'moment';
 
 export default Ember.Service.extend({
   data: null,
-  url: 'https://raw.githubusercontent.com/otvorenesudy/otvorenesudy-data/master/prosecutors-property-declarations-20170610122140.json',
+  url: 'https://raw.githubusercontent.com/otvorenesudy/otvorenesudy-data/master/prosecutors-property-declarations-20170813184123.json',
   updatedAt: Ember.computed('url', function() {
     var datetime = this.get('url').match(/(\d{4}\d{2}\d{2}\d{2}\d{2}\d{2}).json$/)[1];
 
